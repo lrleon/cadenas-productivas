@@ -1,0 +1,27 @@
+digraph {
+	charset=latin1
+	rankdir = LR
+	reduccion [label = "Reducción\nelectrolítica\n12 horas", shape = box]
+	alumina [label = "Alúmina"]
+	litio [label = "Carbonato de litio"]
+	oxido [label = "Oxido de magnesio"]
+	calcio [label = "Fluoruro de calcio"]
+	anodo [label = "Ánodo envarillado\nrociado"]
+	catodos [label = "Cátodos"]
+	electricidad [label = "Electricidad"]
+	aluminio [label = "Aluminio"]
+	supervisor  [label = "Supervisor"]
+	obrero [label = "Obrero"]
+
+alumina->reduccion [label = "1 Tn"]
+litio->reduccion  [label = "35 Kg"]
+oxido->reduccion  [label = "15 Kg"]
+calcio->reduccion  [label = "20 Kg"]
+anodo->reduccion [label = "20"]
+catodos->reduccion [label = "20"]
+electricidad->reduccion [label = "100 Mw"]
+obrero->reduccion [label = "3"]
+supervisor->reduccion [label = "3"]
+reduccion->aluminio [label = "800 Kg"]
+}
+		   
